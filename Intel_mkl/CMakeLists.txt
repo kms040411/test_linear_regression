@@ -31,7 +31,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 add_compile_options(-Wall -fmax-errors=5 -faligned-new -march=native -mtune=native)
 
 add_executable(intel_mkl_linear_regression
-    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp ${CMAKE_CURRENT_SOURCE_DIR}/lapacke_example_aux.cpp
 )
 string(TOLOWER ${CMAKE_BUILD_TYPE} _type)
 if (_type STREQUAL release)

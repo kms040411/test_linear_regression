@@ -123,6 +123,33 @@ intel_mkl_linear_regression/fast:
 	$(MAKE) -f CMakeFiles/intel_mkl_linear_regression.dir/build.make CMakeFiles/intel_mkl_linear_regression.dir/build
 .PHONY : intel_mkl_linear_regression/fast
 
+lapacke_example_aux.o: lapacke_example_aux.cpp.o
+
+.PHONY : lapacke_example_aux.o
+
+# target to build an object file
+lapacke_example_aux.cpp.o:
+	$(MAKE) -f CMakeFiles/intel_mkl_linear_regression.dir/build.make CMakeFiles/intel_mkl_linear_regression.dir/lapacke_example_aux.cpp.o
+.PHONY : lapacke_example_aux.cpp.o
+
+lapacke_example_aux.i: lapacke_example_aux.cpp.i
+
+.PHONY : lapacke_example_aux.i
+
+# target to preprocess a source file
+lapacke_example_aux.cpp.i:
+	$(MAKE) -f CMakeFiles/intel_mkl_linear_regression.dir/build.make CMakeFiles/intel_mkl_linear_regression.dir/lapacke_example_aux.cpp.i
+.PHONY : lapacke_example_aux.cpp.i
+
+lapacke_example_aux.s: lapacke_example_aux.cpp.s
+
+.PHONY : lapacke_example_aux.s
+
+# target to generate assembly for a file
+lapacke_example_aux.cpp.s:
+	$(MAKE) -f CMakeFiles/intel_mkl_linear_regression.dir/build.make CMakeFiles/intel_mkl_linear_regression.dir/lapacke_example_aux.cpp.s
+.PHONY : lapacke_example_aux.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... intel_mkl_linear_regression"
+	@echo "... lapacke_example_aux.o"
+	@echo "... lapacke_example_aux.i"
+	@echo "... lapacke_example_aux.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
